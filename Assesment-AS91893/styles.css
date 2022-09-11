@@ -53,7 +53,7 @@ nav li a:hover {
 }
 /* Used to style non-thumb images */
 .n-thumb{
-    width: 900px;
+    width: 70%;
     height: auto;
      box-shadow: 10px 10px 5px #ccc;
       -moz-box-shadow: 10px 10px 5px #ccc;
@@ -67,7 +67,7 @@ nav li a:hover {
     background: black url(../img/maunga_club_cabin.jpg) no-repeat center;
     background-size: cover;
     color: none;
-    height: 750px;
+    height: 207mm;
     top: 0px;
 }
 
@@ -75,12 +75,12 @@ nav li a:hover {
 /* Background colours for sections */
 /* Background colour for chalets section */
 #chalets {
-    background: rgb(160, 180, 255 , 0.12);
+    background: rgba(160, 180, 255 , 0.12);
 }
 
 /* Background colour for contact section */
 #contact {
-    background: rgb(0,67,31,0.12);
+    background: rgba(0,67,31,0.12);
 }
 
 h1,h2,h3,h4,nav,.button,.contact-button {
@@ -99,17 +99,17 @@ h2,h3 {
 }
 
 .intro-block {
-    background: rgb(0,0,0,0.65);
+    background: rgba(0,0,0,0.65);
     margin: 0 auto;
     padding: 15px 35px;
     text-align: center;
+
 }
 
 .intro-wrap {
     position: absolute;
     bottom: 0px;
     color: white;
-    background:none;
     text-align: left;
     width:100%;
 }
@@ -128,7 +128,7 @@ h2,h3 {
 
 .content {
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1100px;
 }
 
 #before-footer {
@@ -141,18 +141,7 @@ h2,h3 {
     margin-top: 10px;
 }
 
-.button {
-    color: white;
-    background-color:none;
-    border: 3px solid white;
-    border-radius: 25px;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 30px 5px;
-    min-width: 150px;
-    padding: 10px 15px;
-    text-decoration: none;
-}
+
 .shadow {
      box-shadow: 10px 10px 5px #ccc;
       -moz-box-shadow: 10px 10px 5px #ccc;
@@ -170,12 +159,27 @@ h2,h3 {
 
 
 .chalet-button:hover {
-background-color: #AAC3FF;
+background-color: #00164C;
 
     border: 3px solid black;
     border-radius: 25px;
     color: white;
 }
+
+/* Styling for when mouse hovered over one of the chalet names in #about */
+.chalet-button {
+    background-color: #5577C9;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 30px 5px;
+    min-width: 100%;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 25px;
+    color: white;
+}
+
 .contact-button{
     border: 3px solid black;
     border-radius: 25px;
@@ -194,21 +198,6 @@ background-color: #AAC3FF;
     border-radius: 25px;
     color: white;
 }
-/* Styling for when mouse hovered over one of the chalet names in #about */
-.chalet-button {
-    background-color: #5577C9;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 30px 5px;
-    min-width: 360px;
-    padding: 10px 15px;
-    text-decoration: none;
-    border: 3px solid black;
-    border-radius: 25px;
-
-    color: white;
-
-    }
 article {
     margin: 0 auto;
     text-align: center;
