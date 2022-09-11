@@ -63,6 +63,7 @@ nav li a:hover {
 
 }
 /* Background image for websites front page */
+/* depending on file layout might not work (try removing " /Assesment-AS91893 " if doesnt work) */
 #home {
     background: black url(../Assesment-AS91893/img/maunga_club_cabin.jpg) no-repeat center;
     background-size: cover;
