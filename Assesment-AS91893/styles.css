@@ -7,7 +7,7 @@ body {
     padding: 0;
     text-align: center;
 }
-
+/*  header styles   */
 header {
     background: #001152;
     position: fixed; /* Used to create sticky menu */
@@ -20,7 +20,7 @@ header {
     padding: 10px 0px 10px 50px;
     width: 250px;
 }
-
+/*  Navigation styles   */
 nav {
     color: white;
     float: right;
@@ -64,10 +64,9 @@ nav li a:hover {
 }
 /* Background image for websites front page */
 #home {
-    background: black url(../img/maunga_club_cabin.jpg) no-repeat center;
+    background: black url(../Assesment-AS91893/img/maunga_club_cabin.jpg) no-repeat center;
     background-size: cover;
-    color: none;
-    height: 207mm;
+    height: 100vh;
     top: 0px;
 }
 
@@ -82,12 +81,12 @@ nav li a:hover {
 #contact {
     background: rgba(0,67,31,0.12);
 }
-
+/*  Fonts - open sans   */
 h1,h2,h3,h4,nav,.button,.contact-button {
     font-family: 'Open Sans', sans-serif;
 
 }
-
+/*  Text shadow gives the text in H1 a shadow   */
 h1 {
     font-size: 80px;
         text-shadow: 2px 2px 0px #808080;
@@ -118,17 +117,19 @@ h2,h3 {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
  footer{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 #about,#chalets,#contact {
     min-height: 100mm;
 }
 
 .content {
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 1300px;
 }
 
 #before-footer {
@@ -141,7 +142,7 @@ h2,h3 {
     margin-top: 10px;
 }
 
-
+/*  Shadows for the images    */
 .shadow {
      box-shadow: 10px 10px 5px #ccc;
       -moz-box-shadow: 10px 10px 5px #ccc;
@@ -149,15 +150,13 @@ h2,h3 {
       -khtml-box-shadow: 10px 10px 5px #ccc;
 }
 
-/* Styling for when mouse hovered over button in intro section*/
-.intro-wrap .button:hover {
-    border: 3px solid #FF5B00;
-    color: #FF5B00;
-    background-color:none;
+/*  Removes the dots from the list   */
+li {
+    list-style-type: none;
 }
 
 
-
+/* Styling for when mouse hovered over one of the chalet names in #about */
 .chalet-button:hover {
 background-color: #00164C;
 
@@ -166,7 +165,7 @@ background-color: #00164C;
     color: white;
 }
 
-/* Styling for when mouse hovered over one of the chalet names in #about */
+/*  Main button styles for chalet   */
 .chalet-button {
     background-color: #5577C9;
     font-size: 1.2em;
@@ -179,7 +178,7 @@ background-color: #00164C;
     border-radius: 25px;
     color: white;
 }
-
+/*  Main button styles for contact button   */
 .contact-button{
     border: 3px solid black;
     border-radius: 25px;
@@ -191,13 +190,14 @@ background-color: #00164C;
     text-decoration: none;
 }
 
-/* Styling for when mouse hovered over Email button at bottom of page*/
+/* Styling for when mouse hovered over Email button at bottom of page */
 .contact-button:hover{
     background-color: #5577C9;
     border: 3px solid black;
     border-radius: 25px;
     color: white;
 }
+
 article {
     margin: 0 auto;
     text-align: center;
@@ -214,10 +214,6 @@ footer {
     color: white;
 }
 
-.t-img{
-    width:300px;
-    height: 200px;
-}
 
 /* Used for single column layout */
 .single-cards {
@@ -242,6 +238,7 @@ footer {
     margin: 0 auto;
     margin-bottom: 200px;
 }
+/*   width of chalet images_thumb  */
 .chalets-thumb{
     width: 300px;
 }
