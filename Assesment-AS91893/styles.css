@@ -1,71 +1,212 @@
 body {
-    font-family: 'Arial', sans-serif;
+    color: #000000;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.5em;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.logo {
-    padding: 7px 50px;
-    width: 300px;
-    height: auto;
-
-}
-.head-img{
-    height: auto;
-    width: 100%;
-
-}
-
-h1{
-    font-size: 40px;
-
-}
-
 header {
-    background-color: #fb8c00;
-    height: 100px;
-    margin-bottom: 0px;
+    background: #9580FF;
+    position: fixed; /* Used to create sticky menu */
     text-align: left;
     width: 100%;
+    z-index: 999; /*Ensure header is always visible on top of all other elements */
+}
+
+.logo {
+    padding: 10px 0px 10px 50px;
+    width: 250px;
 }
 
 nav {
-    float: right;
-    padding: 40px 50px 0px 0px;
-}
-
-nav a {
-    padding-right: 30px;
     color: white;
-    text-decoration: none;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-    font-size: 20px;
+    float: right;
+    padding: 30px 50px 0px 0px;
 }
 
-#about{
-    padding-bottom: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Used to style navigation menu items when mouse moved over item*/
+nav li a:hover {
+    background-color: #00431F;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* ADDED BY ME */
+.n-thumb{
+    width: 900px;
+    height: auto;
+
+}
+/* Background image for introduction section */
+#homepage {
+    background: black url(../img/maunga_club_cabin.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    top: 0px;
+}
+
+/* Background colour for chalets section */
+#chalets {
+    background: rgba(255, 91, 0, 0.12);
+}
+
+/* Background colour for contact section */
+#contact {
+    background: rgba(0,67,31,0.12);
+}
+
+h1,
+h2,
+h3,
+nav,
+.button,
+.contact-button {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 4.3em;
+}
+
+h2,
+h3 {
+    font-size: 2.3em;
+}
+
+.intro-block {
+    background: rgba(0,0,0,0.65);
+    margin: 0 auto;
+    padding: 15px 35px;
     text-align: center;
 }
-#gallery{
-    min-height: 100vh;
+
+.intro-wrap {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    text-align: left;
+    width:100%;
+}
+
+#about,
+#chalets,
+#gallery-area,
+#contact,
+footer {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-
-.test{
-    clear:both;
+#about,
+#chalets,
+#gallery-area,
+#contact {
+    min-height: 100vh;
 }
 
+.content {
+    margin: 0 auto;
+    max-width: 2000px;
+}
 
+#before-footer {
+    background-color: #FF5B00;
+    color: white;
+}
+
+.button {
+    color: white;
+    border: 3px solid white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 30px 5px;
+    min-width: 150px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.contact-button {
+    border: 3px solid #00431F;
+    color: #00431F;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 30px 5px;
+    min-width: 150px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+/* Styling for when mouse hovered over button in intro section*/
+.intro-wrap .button:hover {
+    border: 3px solid #FF5B00;
+    color: #FF5B00;
+}
+
+/* Styling for when mouse hovered over Email button at bottom of page*/
+.contact-button:hover {
+    background-color: #00431F;
+    border: 3px solid #FF5B00;
+    color: white;
+}
+
+article {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+
+}
+
+section a {
+    display: inline-block;
+}
 
 footer {
-    background-color: #FF7F50;
+    background-color: #00431F;
     color: white;
-    margin-top: 0px;
-    padding: 30px 0px;
 }
+
+.t-img{
+    width:300px;
+    height: 200px;
+}
+
+/*Used for three column layout for different services*/
+.three-cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 0 auto;
+}
+
+/*Used for two column layout for Contact section*/
+.two-cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 0 auto;
+}
+
+/*Used for single column layout for different services*/
+.single-cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin: 0 auto;

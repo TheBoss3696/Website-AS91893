@@ -1,84 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!-- link the page to the stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--FancyBox (below) used to create gallery with 'lightbox' effect-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <title>Maunga Club</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="img/Maunga_Club_white.png" /></a>
+        <a href="index.html"><img class="logo" src="img/Maunga_Club_white.png" alt="Maunga Club logo"/></a>
         <nav>
-            <a href="index.html">HOME</a>
-            <a href="#chalets">CHALETS</a>
-            <a href="#gallery">GALLERY</a>
-            <a href="#contact">CONTACT</a>
+            <ul>
+                <li><a href="#homepage">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#chalets">CHALETS</a></li>
+                <li><a href="#gallery-area">GALLERY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
         </nav>
     </header>
 
-    <div>
-        <img class="head-img" src="img/maunga_club_cabin.jpg"/>
-        <h1>About Maunga Club</h1>
-    </div>
-    <section id="about">
-        <div class="test">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-        optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+    <section id="homepage">
+        <div class="intro-wrap">
+            <div class="intro-block">
+                <h1>Welcome to the Club!</h1>
+                <a href="#about" class="button">ABOUT US</a>
+            </div>
         </div>
-        <div>
+    </section>
 
-            <p>All three chalets are on the mountain, so you can ski to and from the chalets.</p>
+    <section id="about">
+        <div class="content">
+        <h1>About Maunga Club</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam. Praesent a lacinia libero. In accumsan malesuada ex, id mattis tellus eleifend in.</p>
+        <div class="single-cards">
+            <article>
+            <h2>Wonderful Mountain Ranges</h2>
+            <img class="n-thumb" src="img/mountain_view_1.jpg" alt="Wonderful Mountain range"/>
+
             <p>The mountain gives 550 hectares of skiing/snowboarding area, and the longest
                 ski/snowboard season in New Zealand.</p>
-            <p>Only Club members can access the chalets. <button>Join The Club Now!</button></p>
+            </article>
+        </div>
+        <h2>Rentable Chalets</h2>
+
+        <div class="three-cards">
+
+        <article>
+            <img class="t-img" src="img/kakapo/cabin_view_thumb.jpg" alt="Wonderful Mountain range"/>
+        </article>
+        <article>
+            <img class="t-img" src="img/kereru/cabin_exterior_thumb.jpg" alt="Beautifully manicured hedge" />
+        </article>
+        <article>
+            <img class="t-img" src="img/pukeko/chalet_exterior_thumb.jpg" alt="Wonderful Mountain range"/>
+        </article>
+        </div>
+            <h4>We offer 3 chalets!</h4>
+            <p>All three chalets are on the mountain, so you can ski to and from the chalets.</p>
         </div>
     </section>
+
     <section id="chalets">
-        <h1>Chalets options</h1>
-        <h3>Important Information</h3>
-        <p>All chalet bookings must be from Friday to Sunday.</p>
-        <p>Chalets offer shared accommodation for between 6 and 40 people per chalet.</p>
+        <div class="content">
+        <h1>Chalets</h1>
+        <div class="three-cards">
+
+            <article>
+                <a data-fancybox="gallery" href="img/kakapo/bunk_room.jpg"><img src="img/kakapo/bunk_room_thumb.jpg" alt=""></a>
+                <h2>Bunk Room</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+                <a data-fancybox="gallery" href="img/kakapo/cabin_exterior.jpg"><img src="img/kakapo/cabin_exterior_thumb.jpg" alt=""></a>
+                <h2>Cabin Exterior</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+               <a data-fancybox="gallery" href="img/kakapo/cabin_view.jpg"><img src="img/kakapo/cabin_view_thumb.jpg" alt=""></a>
+                <h2>Cabin View</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+                 <a data-fancybox="gallery" href="img/kakapo/hallway.jpg"><img src="img/kakapo/hallway_thumb.jpg" alt=""></a>
+                <h2>Inside Hallway</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+
+        </div>
+            <div class="three-cards">
+
+            <article>
+                <a data-fancybox="gallery-1" href="img/kakapo/bunk_room.jpg"><img src="img/kakapo/bunk_room_thumb.jpg" alt=""></a>
+                <h2>Pruning - $20</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+                <a data-fancybox="gallery-1" href="img/kakapo/cabin_exterior.jpg"><img src="img/kakapo/cabin_exterior_thumb.jpg" alt=""></a>
+                <h2>Cleanup - $20</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+               <a data-fancybox="gallery-1" href="img/kakapo/cabin_view.jpg"><img src="img/kakapo/cabin_view_thumb.jpg" alt=""></a>
+                <h2>Topsoil - $20</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+                 <a data-fancybox="gallery-1" href="img/kakapo/hallway.jpg"><img src="img/kakapo/hallway_thumb.jpg" alt=""></a>
+                <h2>Removal - $50</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+
+        </div>
+            <div class="three-cards">
+
+            <article>
+                <a data-fancybox="gallery-2" href="img/kakapo/bunk_room.jpg"><img src="img/kakapo/bunk_room_thumb.jpg" alt=""></a>
+                <h2>Pruning - $20</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+                <a data-fancybox="gallery-2" href="img/kakapo/cabin_exterior.jpg"><img src="img/kakapo/cabin_exterior_thumb.jpg" alt=""></a>
+                <h2>Cleanup - $20</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+               <a data-fancybox="gallery-2" href="img/kakapo/cabin_view.jpg"><img src="img/kakapo/cabin_view_thumb.jpg" alt=""></a>
+                <h2>Topsoil - $20</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+                 <a data-fancybox="gallery-2" href="img/kakapo/hallway.jpg"><img src="img/kakapo/hallway_thumb.jpg" alt=""></a>
+                <h2>Removal - $50</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+
+        </div>
+        </div>
     </section>
-    <section id="gallery">
+    <section id="gallery-area">
+        <h1>Gallery</h1>
         <!--This is the gallery lightbox-->
-        <h1>Gallery View</h1>
-        <h2>Kakapo</h2>
-        <a data-fancybox="gallery" href="img/kakapo/bunk_room.jpg"><img src="img/kakapo/bunk_room_thumb.jpg" alt=""></a>
-        <a data-fancybox="gallery" href="img/kakapo/cabin_exterior.jpg"><img src="img/kakapo/cabin_exterior_thumb.jpg" alt=""></a>
-        <a data-fancybox="gallery" href="img/kakapo/cabin_view.jpg"><img src="img/kakapo/cabin_view_thumb.jpg" alt=""></a>
-        <a data-fancybox="gallery" href="img/kakapo/hallway.jpg"><img src="img/kakapo/hallway_thumb.jpg" alt=""></a>
 
-        <h2>Kereru</h2>
-        <a data-fancybox="gallery" href="img/kereru/adult_bedroom.jpg"><img src="img/kereru/adult_bedroom_thumb.jpg"
-                                                                            alt=""></a>
-        <a data-fancybox="gallery" href="img/kereru/cabin_exterior.jpg"><img src="img/kereru/cabin_exterior_thumb.jpg"
-                                                                             alt="Kereru chalet cabin exterior"></a>
-        <a data-fancybox="gallery" href="img/kereru/kids_bedroom.jpg"><img src="img/kereru/kids_bedroom_thumb.jpg"
-                                                                           alt="Kereru chalet kids bedroom"></a>
-        <a data-fancybox="gallery" href="img/kereru/kitchen.jpg"><img src="img/kereru/kitchen_thumb.jpg"
-                                                                      alt="Kereru chalet kitchen"></a>
-
-
-        <h2>Pukeko</h2>
-        <a data-fancybox="gallery" href="img/pukeko/adult_bedroom.jpg"><img src="img/pukeko/adult_bedroom_thumb.jpg"
-            alt="Pukeko chalet adult bedroom " ></a>
-        <a data-fancybox="gallery" href="img/pukeko/bathroom.jpg"><img src="img/pukeko/bathroom_thumb.jpg"
-           alt="Pukeko chalet bathroom"></a>
-        <a data-fancybox="gallery" href="img/pukeko/chalet_exterior.jpg"><img src="img/pukeko/chalet_exterior_thumb.jpg"
-            alt="Pukeko chalet exterior"></a>
-        <a data-fancybox="gallery" href="img/pukeko/chalet_view.jpg"><img src="img/pukeko/chalet_view_thumb.jpg"
-          alt="Pukeko chalet view"></a>
-            </section>
+    </section>
     <section id="contact">
-        <h1>Contact</h1>
+        <div class="content">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam. Praesent a lacinia libero. In accumsan malesuada ex, id mattis tellus eleifend in.</p>
+            <div class="two-cards">
+                <article>
+                    <h2>Call Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+                    <h3>0256 674 7689</h3>
+                </article>
+                <article>
+                    <h2>Email Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+                    <a href="mailto:admin@gardenkings.co.nz" class="contact-button">EMAIL</a>
+                </article>
+            </div>
+        </div>
     </section>
     <footer>
-        <p><small>&copy; Maunga Club 2022 - Website by Giavin Industries Inc.</small></p>
+        <p><small>&copy; Maunga Club - Website by Giavin Desings Inc.</small></p>
     </footer>
-
+    <!--Script below adds a smooth scroll effect when the user clicks on a button to take them to a different place on the page.-->
+    <script>
+        $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault()
+            $('html, body').animate(
+                {
+                    scrollTop: $($(this).attr('href')).offset().top,
+                },
+                500,
+                'linear'
+            )
+        })
+    </script>
 </body>
+</html>
