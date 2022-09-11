@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+    <!-- google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--FancyBox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
@@ -20,7 +22,7 @@
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#chalets">CHALETS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#contact">SIGN UP</a></li>
             </ul>
         </nav>
     </header>
@@ -52,24 +54,21 @@
             <h4>All three chalets are on the mountain, so you can ski to and from the chalets!!</h4>
         <div class="three-cards">
         <article>
-            <h2>Kakapo</h2>
+            <a href="#k-1" class="chalet-button"><h2>Kakapo</h2></a>
             <ul>
-                <li><p>Largest of the 3 chalets best for a honeymoon!</p></li>
-                <li><p>Large kitchen, dining and living area with Great amenities</p></li>
+                <p>Largest of the 3 chalets best for a trip!Large kitchen, dining and living area with Great amenities</p>
             </ul>
         </article>
         <article>
-            <h2>Kereru</h2>
+            <a href="#k-2" class="chalet-button"><h2>Kereru</h2></a>
             <ul>
-                <li><p>Great for large groups/families wanting a chalet to themselves</p></li>
-                <li><p>Limits on adult/child number ensure comfortable stay</p></li>
+                <p>Great for large groups/families wanting a chalet to themselves Limits on adult/child number ensure comfortable stay</p>
             </ul>
         </article>
         <article>
-            <h2>Pukeko</h2>
+            <a href="#p-1" class="chalet-button"><h2>Pukeko</h2></a>
             <ul>
-                <li><p>Great option for a family with Separate living area</p></li>
-                <li><p>2 bedrooms which are Perfect for families with 2-4 children</p></li>
+                <p>Great option for a family with Separate living area with 2 bedrooms which are Perfect for families with 2-4 children</p>
             </ul>
         </article>
             </div>
@@ -78,97 +77,133 @@
     <section id="chalets">
         <div class="content">
         <h1>Chalets</h1>
-            <h2>Kakapo</h2>
+            <a id="k-1"><h2>Kakapo</h2></a>
+            <h4>Maximum amount of adults are 10.</h4>
+            <h4>Maximum amount of children for the chalet is 30.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            </p>
         <div class="three-cards">
             <article>
-                <a data-fancybox="kakapo" href="img/kakapo/bunk_room.jpg"><img class="c-thumb" src="img/kakapo/bunk_room_thumb.jpg" alt=""></a>
+                <a class="shadow" data-fancybox="kakapo" href="img/kakapo/bunk_room.jpg"><img class= chalet_thumb src="img/kakapo/bunk_room_thumb.jpg" alt=""></a>
                 <h2>Bunk Room</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
             </article>
             <article>
-                <a data-fancybox="kakapo" href="img/kakapo/cabin_exterior.jpg"><img class="c-thumb" src="img/kakapo/cabin_exterior_thumb.jpg" alt=""></a>
-                <h2>Cabin Exterior</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-            </article>
-            <article>
-               <a data-fancybox="kakapo" href="img/kakapo/cabin_view.jpg"><img class="c-thumb" src="img/kakapo/cabin_view_thumb.jpg" alt=""></a>
-                <h2>Cabin View</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-            </article>
-            <article>
-                 <a data-fancybox="kakapo" href="img/kakapo/hallway.jpg"><img class="c-thumb" src="img/kakapo/hallway_thumb.jpg" alt=""></a>
-                <h2>Hallway</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-            </article>
-
-        </div>
-            <h2>Kereru</h2>
-            <div class="three-cards">
-
-            <article>
-                <a data-fancybox="kereru" href="img/kereru/adult_bedroom.jpg"><img class="c-thumb" src="img/kereru/adult_bedroom_thumb.jpg" alt=""></a>
-                <h2>Bunk Room</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-            </article>
-            <article>
-                <a data-fancybox="kereru" href="img/kereru/cabin_exterior.jpg"><img class="c-thumb" src="img/kereru/cabin_exterior_thumb.jpg" alt=""></a>
-                <h2>Cabin Exterior</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-            </article>
-            <article>
-               <a data-fancybox="kereru" href="img/kereru/kids_bedroom.jpg"><img class="c-thumb" src="img/kereru/kids_bedroom_thumb.jpg" alt=""></a>
-                <h2>Kids Bedroom</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-            </article>
-            <article>
-                 <a data-fancybox="kereru" href="img/kereru/kitchen.jpg"><img class="c-thumb" src="img/kereru/kitchen_thumb.jpg" alt=""></a>
-                <h2>Kitchen</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-            </article>
-
-        </div>
-            <h2>Pukeko</h2>
-            <div class="three-cards">
-
-            <article>
-                <a data-fancybox="pukeko" href="img/pukeko/adult_bedroom.jpg"><img class="c-thumb" src="img/pukeko/adult_bedroom_thumb.jpg" alt=""></a>
-                <h2>Adult Bedroom</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-            </article>
-            <article>
-                <a data-fancybox="pukeko" href="img/pukeko/bathroom.jpg"><img class="c-thumb" src="img/pukeko/bathroom_thumb.jpg" alt=""></a>
-                <h2>Chalet Bathroom</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-            </article>
-            <article>
-               <a data-fancybox="pukeko" href="img/pukeko/chalet_exterior.jpg"><img class="c-thumb" src="img/pukeko/chalet_exterior_thumb.jpg" alt=""></a>
+                <a class="shadow" data-fancybox="kakapo" href="img/kakapo/cabin_exterior.jpg"><img class= chalet_thumb src="img/kakapo/cabin_exterior_thumb.jpg" alt=""></a>
                 <h2>Chalet Exterior</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
             </article>
             <article>
-                 <a data-fancybox="pukeko" href="img/pukeko/chalet_view.jpg"><img class="c-thumb" src="img/pukeko/chalet_view_thumb.jpg" alt=""></a>
+               <a class="shadow" data-fancybox="kakapo" href="img/kakapo/cabin_view.jpg"><img class= chalet_thumb src="img/kakapo/cabin_view_thumb.jpg" alt=""></a>
                 <h2>Chalet View</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
             </article>
+            <article>
+                 <a class="shadow" data-fancybox="kakapo" href="img/kakapo/hallway.jpg"><img class= chalet_thumb src="img/kakapo/hallway_thumb.jpg" alt=""></a>
+                <h2>Hallway</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
 
+        </div >
+            <a id="k-2"><h2>Kereru</h2></a>
+            <h4>Maximum amount of adults are 2.</h4>
+            <h4>Maximum amount of children for the chalet is 4.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            </p>
+            <div class="three-cards">
+
+            <article>
+                <a class="shadow" data-fancybox="kereru" href="img/kereru/adult_bedroom.jpg"><img class= chalet_thumb src="img/kereru/adult_bedroom_thumb.jpg" alt=""></a>
+                <h2>Adult Bedroom</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+                <a class="shadow" data-fancybox="kereru" href="img/kereru/cabin_exterior.jpg"><img class= chalet_thumb src="img/kereru/cabin_exterior_thumb.jpg" alt=""></a>
+                <h2>Chalet Exterior</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+               <a class="shadow" data-fancybox="kereru" href="img/kereru/kids_bedroom.jpg"><img class= chalet_thumb src="img/kereru/kids_bedroom_thumb.jpg" alt=""></a>
+                <h2>Kids Bedroom</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+                 <a class="shadow" data-fancybox="kereru" href="img/kereru/kitchen.jpg"><img class= chalet_thumb src="img/kereru/kitchen_thumb.jpg" alt=""></a>
+                <h2>Chalet Kitchen</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+
+        </div>
+            <a id="p-1"><h2>Pukeko</h2></a>
+            <h4>Maximum amount of adults are 6.</h4>
+            <h4>Maximum amount of children for the chalet is 15.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.
+            </p>
+            <div class="three-cards">
+
+            <article>
+                <a class="shadow" data-fancybox="pukeko" href="img/pukeko/adult_bedroom.jpg"><img class= chalet_thumb src="img/pukeko/adult_bedroom_thumb.jpg" alt=""></a>
+                <h2>Adult Bedroom</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+                <a class="shadow" data-fancybox="pukeko" href="img/pukeko/bathroom.jpg"><img class= chalet_thumb src="img/pukeko/bathroom_thumb.jpg" alt=""></a>
+                <h2>Chalet Bathroom</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+               <a class="shadow" data-fancybox="pukeko" href="img/pukeko/chalet_exterior.jpg"><img class= chalet_thumb src="img/pukeko/chalet_exterior_thumb.jpg" alt=""></a>
+                <h2>Chalet Exterior</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
+            <article>
+                 <a class="shadow" data-fancybox="pukeko" href="img/pukeko/chalet_view.jpg"><img class= chalet_thumb src="img/pukeko/chalet_view_thumb.jpg" alt=""></a>
+                <h2>Chalet View</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
+            </article>
         </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="content">
-            <h1>Contact</h1>
+            <h1>JOIN THE CLUB</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam. Praesent a lacinia libero. In accumsan malesuada ex, id mattis tellus eleifend in.</p>
             <div class="two-cards">
                 <article>
                     <h2>Call Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-                    <h3>0256 674 7689</h3>
+                    <p>Cras ac pellentesque risus. Aliquam erat volutpat. Curabitur pretium justo at tortor porttitor
+                        rutrum.Cras ac pellentesque risus. Aliquam erat volutpat. Curabitur pretium justo at tortor
+                        porttitor rutrum.Cras ac pellentesque risus. Aliquam erat volutpat. Curabitur pretium justo at
+                        tortor porttitor rutrum. </p>
+                    <h3>69 420 666</h3>
+                    <h2>Email Us</h2>
+                    <p><b>Company Email: </b>maungaclub@maungaclub.maungaclub</p>
                 </article>
                 <article>
-                    <h2>Email Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus risus varius, porta elit ut, viverra quam.</p>
-                    <a href="mailto:admin@maungaclub.co.nz" class="contact-button">EMAIL</a>
+                    <h3>Required Information</h3>
+                    <p>Full Name</p>
+                    <p>Physical Address</p>
+                    <p>Proof Of Address</p>
+                    <p>Proof of ID</p>
+                    <a class="contact-button" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=someone@gmail.com" target="_blank">EMAIL</a>
+                    <p><b>Membership will be confirmed by an email</b></p>
+
                 </article>
             </div>
         </div>
@@ -176,7 +211,7 @@
     <footer>
         <p><small>&copy; Maunga Club - Website by Giavin Desings Inc.</small></p>
     </footer>
-    <!--Script below adds a smooth scroll effect when the user clicks on a button to take them to a different place on the page.-->
+    <!--Script below adds a smooth scroll effect when user has clicked on a button which leads to a new area of the page-->
     <script>
         $('a[href*="#"]').on('click', function(e) {
             e.preventDefault()

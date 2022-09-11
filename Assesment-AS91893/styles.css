@@ -1,7 +1,8 @@
 body {
     color: #000000;
-    font-family: 'Heebo', sans-serif;
-    font-size: 1.5em;
+    background:none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -50,60 +51,55 @@ nav li a:hover {
     padding: 14px 16px;
     text-decoration: none;
 }
-/* ADDED BY ME */
+/* Used to style non-thumb images */
 .n-thumb{
     width: 900px;
     height: auto;
-    border:4px solid #0F35C7;
+     box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+
 
 }
 /* Background image for websites front page */
 #home {
     background: black url(../img/maunga_club_cabin.jpg) no-repeat center;
     background-size: cover;
-    height: 100vh;
+    color: none;
+    height: 750px;
     top: 0px;
 }
-#about article ul {
-    text-align: left;
-    display:inline-block;
-    border:4px solid #000;
-    border-colour: #bbb;
-    padding:40px;
-}
+
 
 /* Background colours for sections */
 /* Background colour for chalets section */
 #chalets {
-    background: rgba(160, 180, 255 , 0.12);
+    background: rgb(160, 180, 255 , 0.12);
 }
 
 /* Background colour for contact section */
 #contact {
-    background: rgba(0,67,31,0.12);
+    background: rgb(0,67,31,0.12);
 }
 
-h1,
-h2,
-h3,
-h4,
-nav,
-.button,
-.contact-button {
-    font-family: 'Oswald', sans-serif;
+h1,h2,h3,h4,nav,.button,.contact-button {
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 h1 {
-    font-size: 4.3em;
+    font-size: 80px;
+        text-shadow: 2px 2px 0px #808080;
 }
 
-h2,
-h3 {
-    font-size: 2.3em;
+h2,h3 {
+    font-size: 40px;
+
 }
 
 .intro-block {
-    background: rgba(0,0,0,0.65);
+    background: rgb(0,0,0,0.65);
     margin: 0 auto;
     padding: 15px 35px;
     text-align: center;
@@ -113,22 +109,21 @@ h3 {
     position: absolute;
     bottom: 0px;
     color: white;
+    background:none;
     text-align: left;
     width:100%;
 }
 
-#about,
-#chalets,
-#contact,
-footer {
+#about,#chalets,#contact {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
-#about,
-#chalets,
-#contact {
-    min-height: 100vh;
+ footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#about,#chalets,#contact {
+    min-height: 100mm;
 }
 
 .content {
@@ -138,44 +133,82 @@ footer {
 
 #before-footer {
     background-color: #FF5B00;
+    background:none;
     color: white;
+}
+
+#k-1,#k-2,#p-1 {
+    margin-top: 10px;
 }
 
 .button {
     color: white;
+    background-color:none;
     border: 3px solid white;
-    font-size: 1.2em;
+    border-radius: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin: 30px 5px;
     min-width: 150px;
     padding: 10px 15px;
     text-decoration: none;
 }
-
-.contact-button {
-    border: 3px solid #00431F;
-    color: #00431F;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 30px 5px;
-    min-width: 150px;
-    padding: 10px 15px;
-    text-decoration: none;
+.shadow {
+     box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
 }
 
 /* Styling for when mouse hovered over button in intro section*/
 .intro-wrap .button:hover {
     border: 3px solid #FF5B00;
     color: #FF5B00;
+    background-color:none;
+}
+
+
+
+.chalet-button:hover {
+background-color: #AAC3FF;
+
+    border: 3px solid black;
+    border-radius: 25px;
+    color: white;
+}
+.contact-button{
+    border: 3px solid black;
+    border-radius: 25px;
+    color: #5577C9;
+    font-weight: bold;
+    margin: 30px 5px;
+    min-width: 150px;
+    padding: 10px 15px;
+    text-decoration: none;
 }
 
 /* Styling for when mouse hovered over Email button at bottom of page*/
-.contact-button:hover {
-    background-color: #00431F;
-    border: 3px solid #FF5B00;
+.contact-button:hover{
+    background-color: #5577C9;
+    border: 3px solid black;
+    border-radius: 25px;
     color: white;
 }
+/* Styling for when mouse hovered over one of the chalet names in #about */
+.chalet-button {
+    background-color: #5577C9;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 30px 5px;
+    min-width: 360px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 25px;
 
+    color: white;
+
+    }
 article {
     margin: 0 auto;
     text-align: center;
@@ -197,33 +230,6 @@ footer {
     height: 200px;
 }
 
-/*Used for three column layout for different services*/
-.three-cards {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    margin: 0 auto;
-    margin-bottom: 200px;
-}
-.c-thumb{
-    width: 300px;
-}
-
-/*Used for two column layout for Contact section*/
-.two-cards {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin: 0 auto;
-}
-
-/*Used for single column layout for different services*/
-.single-cards {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    margin: 0 auto;
-}
 /* Used for single column layout */
 .single-cards {
     display: grid;
@@ -247,6 +253,6 @@ footer {
     margin: 0 auto;
     margin-bottom: 200px;
 }
-.c-thumb{
+.chalets-thumb{
     width: 300px;
 }
